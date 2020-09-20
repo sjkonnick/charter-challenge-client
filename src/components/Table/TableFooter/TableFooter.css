@@ -1,0 +1,32 @@
+.blue-table tfoot {
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  background: #d0e4f5;
+  background: -moz-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #d0e4f5 100%);
+  background: -webkit-linear-gradient(top, #dcebf7 0%, #d4e6f6 66%, #d0e4f5 100%);
+  background: linear-gradient(to bottom, #dcebf7 0%, #d4e6f6 66%, #d0e4f5 100%);
+  border-top: 2px solid #444444;
+}
+
+.blue-table tfoot td {
+  font-size: 14px;
+}
+
+.blue-table tfoot .links {
+  text-align: right;
+}
+
+.blue-table tfoot .links button {
+  display: inline-block;
+  background: #1c6ea4;
+  color: #ffffff;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

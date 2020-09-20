@@ -1,0 +1,71 @@
+.blue-table th {
+  border: 1px solid #aaaaaa;
+  padding: 3px 2px;
+}
+
+.blue-table div th {
+  margin: 0 auto;
+}
+
+.blue-table thead {
+  background: #1c6ea4;
+  background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1c6ea4 100%);
+  background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1c6ea4 100%);
+  background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1c6ea4 100%);
+  border-bottom: 2px solid #444444;
+}
+
+.blue-table thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: #ffffff;
+  border-left: 2px solid #d0e4f5;
+}
+
+.blue-table thead th:first-child {
+  border-left: none;
+}
+
+.header-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.drop-down {
+  margin-left: 8px;
+}
+
+.column-title {
+  flex: 5;
+}
+
+.filter-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: auto;
+}
+
+.arrow-up {
+  position: relative;
+  flex: 1;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid white;
+}
+
+.arrow-down {
+  position: relative;
+  flex: 1;
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid white;
+}
