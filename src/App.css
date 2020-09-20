@@ -15,13 +15,3 @@ body {
     padding: 20px;
   }
 }
-
-.no-results {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 28px;
-  color: white;
-  height: 200px;
-}

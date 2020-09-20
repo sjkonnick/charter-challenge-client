@@ -1,8 +1,22 @@
-import React from 'react';
+import * as React from 'react';
+import { FormEvent } from 'react';
 import './TableHeader.css';
 import { genres, states, attires } from '../../../utils/constants';
 
-const TableHeader = ({
+type Props = {
+  nameSort: string;
+  stateSort: string;
+  state: string;
+  genre: string;
+  attire: string;
+  handleStateChange(event: FormEvent<HTMLSelectElement>): void;
+  handleGenreChange(event: FormEvent<HTMLSelectElement>): void;
+  handleAttireChange(event: FormEvent<HTMLSelectElement>): void;
+  handleNameSort(): void;
+  handleStateSort(): void;
+};
+
+const TableHeader: React.FC<Props> = ({
   nameSort,
   stateSort,
   state,

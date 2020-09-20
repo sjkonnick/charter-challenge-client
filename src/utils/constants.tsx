@@ -97,3 +97,18 @@ export const genres = [
 ];
 
 export const attires = ['ALL', 'Business Casual', 'Casual', 'Smart Casual', 'Formal'];
+
+export type Restaurant = {
+  id: string;
+  name: string;
+  city: string;
+  state: string;
+  telephone: string;
+  genre: string;
+  attire: string;
+  zip: string;
+  website: string;
+  lat: string;
+  long: string;
+  address1: string;
+};

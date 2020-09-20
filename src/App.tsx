@@ -1,9 +1,26 @@
-import React, { Component } from 'react';
+import * as React from 'react';
+import { KeyboardEvent, FormEvent } from 'react';
 import './App.css';
 import Table from './components/Table';
 import Header from './components/Header';
+import { Restaurant } from './utils/constants';
 
-class App extends Component {
+type Props = {};
+
+type State = {
+  restaurants: Restaurant[];
+  totalPages: number;
+  page: number;
+  search: string;
+  state: string;
+  genre: string;
+  attire: string;
+  nameSort: string;
+  stateSort: string;
+  hasLoaded: boolean;
+};
+
+class App extends React.Component<Props, State> {
   constructor(props) {
     super(props);
 
@@ -41,7 +58,7 @@ class App extends Component {
     this.callAPI();
   }
 
-  handleKeyDown = (event) => {
+  handleKeyDown = (event: KeyboardEvent) => {
     if (event.key === 'Enter') {
       this.callAPI();
     }
@@ -51,41 +68,44 @@ class App extends Component {
     this.setState({ search: '' }, this.callAPI);
   };
 
-  setPage = (page) => {
+  setPage = (page: number) => {
     this.setState({ page }, this.callAPI);
   };
 
-  handleSearch = (search) => {
+  handleSearch = (search: string) => {
     this.setState({
       search,
       page: 1,
     });
   };
 
-  handleStateChange = (event) => {
+  handleStateChange = (event: FormEvent<HTMLSelectElement>) => {
+    const state: string = event.currentTarget.value;
     this.setState(
       {
-        state: event.target.value,
+        state,
         page: 1,
       },
       this.callAPI,
     );
   };
 
-  handleGenreChange = (event) => {
+  handleGenreChange = (event: FormEvent<HTMLSelectElement>) => {
+    const genre: string = event.currentTarget.value;
     this.setState(
       {
-        genre: event.target.value,
+        genre,
         page: 1,
       },
       this.callAPI,
     );
   };
 
-  handleAttireChange = (event) => {
+  handleAttireChange = (event: FormEvent<HTMLSelectElement>) => {
+    const attire: string = event.currentTarget.value;
     this.setState(
       {
-        attire: event.target.value,
+        attire,
         page: 1,
       },
       this.callAPI,
@@ -177,7 +197,6 @@ class App extends Component {
           handleNameSort={this.handleNameSort}
           handleStateSort={this.handleStateSort}
         />
-        {!this.state.restaurants.length && <div className="no-results">No Results Found</div>}
       </div>
     );
   }
