@@ -20,22 +20,24 @@ const Table = ({
   handleStateSort,
 }) => {
   return (
-    <table className="blue-table">
-      <TableHeader
-        nameSort={nameSort}
-        stateSort={stateSort}
-        state={state}
-        genre={genre}
-        attire={attire}
-        handleStateChange={handleStateChange}
-        handleGenreChange={handleGenreChange}
-        handleAttireChange={handleAttireChange}
-        handleNameSort={handleNameSort}
-        handleStateSort={handleStateSort}
-      />
-      <TableBody restaurants={restaurants} />
-      <TableFooter restaurants={restaurants} totalPages={totalPages} setPage={setPage} />
-    </table>
+    !!restaurants.length && (
+      <table className="blue-table">
+        <TableHeader
+          nameSort={nameSort}
+          stateSort={stateSort}
+          state={state}
+          genre={genre}
+          attire={attire}
+          handleStateChange={handleStateChange}
+          handleGenreChange={handleGenreChange}
+          handleAttireChange={handleAttireChange}
+          handleNameSort={handleNameSort}
+          handleStateSort={handleStateSort}
+        />
+        <TableBody restaurants={restaurants} />
+        <TableFooter restaurants={restaurants} totalPages={totalPages} setPage={setPage} />
+      </table>
+    )
   );
 };
 

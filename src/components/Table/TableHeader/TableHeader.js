@@ -17,14 +17,14 @@ const TableHeader = ({
   return (
     <thead>
       <tr>
-        <th className="header-row cursor" onClick={handleNameSort}>
+        <th className="header-row cursor" onClick={handleNameSort} style={{ width: 200 }}>
           <div className="column-title">Name </div>
           <div className="filter-container">
             <div className={nameSort === 'ASC' ? 'arrow-up' : nameSort === 'DESC' ? 'arrow-down' : ''}></div>
           </div>
         </th>
-        <th>City</th>
-        <th className="header-row cursor" onClick={handleStateSort}>
+        <th style={{ width: 150 }}>City</th>
+        <th className="header-row cursor" onClick={handleStateSort} style={{ width: 130 }}>
           <div className="column-title">State</div>
           <div className="filter-container">
             <div className={stateSort === 'ASC' ? 'arrow-up' : stateSort === 'DESC' ? 'arrow-down' : ''}></div>

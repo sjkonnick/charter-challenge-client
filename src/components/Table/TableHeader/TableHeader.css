@@ -19,7 +19,7 @@
   font-size: 15px;
   font-weight: bold;
   color: #ffffff;
-  border-left: 2px solid #d0e4f5;
+  border: none;
 }
 
 .blue-table thead th:first-child {
@@ -29,6 +29,7 @@
 .header-row {
   display: flex;
   flex-direction: row;
+  border: none;
 }
 
 .cursor {
@@ -40,6 +41,8 @@
 }
 
 .column-title {
+  position: relative;
+  top: 1px;
   flex: 5;
 }
 
@@ -47,12 +50,13 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .arrow-up {
   position: relative;
   flex: 1;
+  top: 1px;
   width: 0;
   height: 0;
   border-left: 8px solid transparent;
@@ -63,6 +67,7 @@
 .arrow-down {
   position: relative;
   flex: 1;
+  top: 1px;
   width: 0;
   height: 0;
   border-left: 8px solid transparent;

@@ -6,9 +6,9 @@ const TableBody = ({ restaurants }) => {
     <tbody>
       {restaurants.map((restaurant) => (
         <tr key={restaurant.id}>
-          <td>{restaurant.name}</td>
-          <td>{restaurant.city}</td>
-          <td>{restaurant.state}</td>
+          <td style={{ width: 200 }}>{restaurant.name}</td>
+          <td style={{ width: 150 }}>{restaurant.city}</td>
+          <td style={{ width: 130 }}>{restaurant.state}</td>
           <td>{restaurant.telephone}</td>
           <td>{restaurant.genre}</td>
           <td>{restaurant.attire}</td>

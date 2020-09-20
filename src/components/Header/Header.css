@@ -1,55 +1,64 @@
 .app-header {
-    height: 100px;
-    padding: 20px;
-    color: black;
+  height: 200px;
+  color: white;
 }
 
 .app-title {
-    font-size: 1.5em;
+  font-size: 2.5em;
 }
 
 .search-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
 }
 
 .search-wrapper {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    min-width: 100px;
-    width: 50%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
 }
 
 .search-input {
-    border: 1px solid grey;
-    border-radius: 5px;
-    height: 20px;
-    width: 100%;
-    padding: 2px 23px 2px 30px;
-    outline: 0;
-    background-color: #f5f5f5;
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 50px;
+  width: 300px;
+  padding: 2px 23px 2px 60px;
+  outline: 0;
+  background-color: #f5f5f5;
+  font-size: 24px;
+  margin-right: 20px;
 }
 
 .search-input:hover,
 .search-input:focus {
-    border: 1.5px solid #009688;
-    background-color: white;
+  background-color: white;
 }
 
 .search-icon {
-    position: absolute;
-    top: 6px;
-    left: 8px;
-    width: 14px;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 30px;
 }
 
 .clear-icon {
-    position: absolute;
-    top: 8px;
-    right: 65px;
-    width: 10px;
-    cursor: pointer;
-    visibility: hidden;
+  position: absolute;
+  top: 12px;
+  right: 110px;
+  width: 30px;
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.search-button {
+  border: 1px solid grey;
+  border-radius: 5px;
+  height: 56px;
+  width: 80px;
 }
