@@ -54,5 +54,5 @@ jobs:
         with:
           task-definition: ${{ steps.task-def.outputs.task-definition }}
           service: charter-challenge-client-service
-          cluster: charter-challenge-cluster
+          cluster: charter-challenge-client-cluster
           wait-for-service-stability: true
