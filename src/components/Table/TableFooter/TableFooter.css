@@ -18,10 +18,12 @@
 }
 
 .blue-table tfoot .links button {
+  font-size: 18px;
   display: inline-block;
+  margin-right: 4px;
   background: #1c6ea4;
   color: #ffffff;
-  padding: 2px 8px;
+  padding: 10px 16px;
   border-radius: 5px;
 }
 
