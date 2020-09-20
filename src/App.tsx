@@ -40,7 +40,7 @@ class App extends React.Component<Props, State> {
 
   callAPI = () => {
     fetch(
-      `http://3.17.193.40/restaurants?page=${this.state.page}&search=${this.state.search}&state=${this.state.state}&genre=${this.state.genre}&attire=${this.state.attire}&nameSort=${this.state.nameSort}&stateSort=${this.state.stateSort}`,
+      `http://localhost:3001/restaurants?page=${this.state.page}&search=${this.state.search}&state=${this.state.state}&genre=${this.state.genre}&attire=${this.state.attire}&nameSort=${this.state.nameSort}&stateSort=${this.state.stateSort}`,
     )
       .then((res) => res.json())
       .then((res) => {
