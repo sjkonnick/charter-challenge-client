@@ -10,3 +10,30 @@
 .blue-table tr:nth-child(even) {
   background: #d0e4f5;
 }
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: absolute;
+  right: 0;
+  top: 40%;
+  background-color: #aaaaaa;
+  height: 200px;
+  width: 300px;
+  border-radius: 5px;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.modal-clear-icon {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  width: 30px;
+  cursor: pointer;
+}

@@ -17,6 +17,7 @@ class App extends Component {
       attire: 'ALL',
       nameSort: 'ASC',
       stateSort: 'OFF',
+      hasLoaded: false,
     };
   }
 
@@ -29,6 +30,7 @@ class App extends Component {
         this.setState({
           restaurants: res.data,
           totalPages: res.totalPages,
+          hasLoaded: true,
         });
       })
 
@@ -147,6 +149,10 @@ class App extends Component {
   };
 
   render() {
+    if (!this.state.hasLoaded) {
+      return null;
+    }
+
     return (
       <div className="app">
         <Header
