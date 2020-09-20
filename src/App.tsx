@@ -50,7 +50,6 @@ class App extends React.Component<Props, State> {
           hasLoaded: true,
         });
       })
-
       .catch((err) => err);
   };
 

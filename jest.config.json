@@ -1,0 +1,7 @@
+{
+  "testRegex": "((\\.|/*.)(test))\\.js?$",
+  "moduleNameMapper":{
+    "^.+\\.(css|less)$": "<rootDir>/src/utils/CSSStub.js"
+  },
+  "setupTestFrameworkScriptFile": "<rootDir>/src/setupTest.js"
+}
