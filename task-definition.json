@@ -31,7 +31,7 @@
       "secrets": null,
       "dockerSecurityOptions": null,
       "memory": null,
-      "memoryReservation": 512,
+      "memoryReservation": 128,
       "volumesFrom": [],
       "stopTimeout": null,
       "image": "401881607933.dkr.ecr.us-east-2.amazonaws.com/charter-challenge-client",
